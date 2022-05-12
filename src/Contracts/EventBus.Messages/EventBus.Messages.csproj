@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Events\Billing\**" />
+    <Compile Remove="Events\Order\**" />
+    <EmbeddedResource Remove="Events\Billing\**" />
+    <EmbeddedResource Remove="Events\Order\**" />
+    <None Remove="Events\Billing\**" />
+    <None Remove="Events\Order\**" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="NServiceBus" Version="7.4.6" />
+	</ItemGroup>
+</Project>
