@@ -18,7 +18,7 @@ event driven, event sourcing, message brokers,Saga, etc, Redis, RabbitMQ,  Nserv
 * REST API principles, CRUD operations
 * **Redis database** connection and containerization
 * Consume Discount **Grpc Service** for inter-service sync communication to calculate product final price
-* Publish BasketCheckout Queue with using **MassTransit and RabbitMQ**
+* Publish BasketCheckout Queue with using **Nservicebus  and RabbitMQ**
   
 #### Discount microservice which includes;
 * ASP.NET **Grpc Server** application
@@ -31,17 +31,18 @@ event driven, event sourcing, message brokers,Saga, etc, Redis, RabbitMQ,  Nserv
 * Sync inter-service **gRPC Communication**
 * Async Microservices Communication with **RabbitMQ Message-Broker Service**
 * Using **RabbitMQ Publish/Subscribe Topic** Exchange Model
-* Using **MassTransit** for abstraction over RabbitMQ Message-Broker system
+* Using **Nservicebus ** for abstraction over RabbitMQ Message-Broker system
 * Publishing BasketCheckout event queue from Basket microservices and Subscribing this event from Ordering microservices	
 * Create **RabbitMQ EventBus.Messages library** and add references Microservices
 
 #### Ordering Microservice
 * Implementing **DDD, CQRS, and Clean Architecture** with using Best Practices
 * Developing **CQRS with using MediatR, FluentValidation and AutoMapper packages**
-* Consuming **RabbitMQ** BasketCheckout event queue with using **MassTransit-RabbitMQ** Configuration
+* Consuming **RabbitMQ** BasketCheckout event queue with using **Nservicebus with SAGA and -RabbitMQ** Configuration
 * **SqlServer database** connection and containerization
 * Using **Entity Framework Core ORM** and auto migrate to SqlServer when application startup
 	
+this project is a new version from [This articlo](https://medium.com/aspnetrun/microservices-architecture-on-net-3b4865eea03f)
 
 #### Docker Compose establishment with all microservices on docker;
 * Containerization of microservices
