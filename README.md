@@ -42,7 +42,7 @@ event driven, event sourcing, message brokers,Saga, etc, Redis, RabbitMQ,  Nserv
 * **SqlServer database** connection and containerization
 * Using **Entity Framework Core ORM** and auto migrate to SqlServer when application startup
 	
-this project is a new version from [This articlo](https://medium.com/aspnetrun/microservices-architecture-on-net-3b4865eea03f)
+
 
 #### Docker Compose establishment with all microservices on docker;
 * Containerization of microservices
